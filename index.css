@@ -51,7 +51,6 @@ table {
 
 * {
 	font-family: 'Noto Serif', serif;
-	border: 1px solid grey !important;
 }
 
 header {
@@ -65,7 +64,7 @@ header {
 }
 
 header h1, header nav {
-	width: 80%;
+	width: 100%;
 	margin-left: 5rem;
 }
 
@@ -77,7 +76,7 @@ h1 {
 	font-size: 3rem;
 }
 
-.anchor {
+.header-nav .anchor {
 	text-decoration: none;
 	color: inherit;
 	padding: 1rem;
@@ -92,7 +91,7 @@ body {
 section {
 	display: flex;
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: flex;
 	align-items: center;
 }
 
@@ -110,7 +109,8 @@ section {
 .body-text {
 	display: flex;
 	flex-flow: column wrap;
-	align-items: flex-start;
+	align-items: center;
+	text-align: left;
 	width: 60%;
 	font-size: 2rem;
 	color: gray;
@@ -139,8 +139,8 @@ section {
 }
 
 .bottom-section div img {
-	width: 400px;
-	height: 400px;
+	width: 370px;
+	height: 370px;
 	padding: 30px;
 	border-radius: 50%;
 }
@@ -173,36 +173,20 @@ footer {
 	justify-content: space-around;
 }
 
-footer div .footer-contact {
+.footer-div a {
 	text-decoration: none;
-	color: inherit;
+	cursor: pointer;
+	color: white;
 }
 
-.footer-div .anchor {
-	display: block;
+.footer-div .anchor:hover{
 	color: black;
-	border: 2px solid #333;
-	text-align: center;
-	position: relative;
-	transition: all .35s;
-}
+  }
+  
+.body-text .body-anchor:hover {
+	color: black;
+}  
 
-.footer-div .anchor:after{
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background: #ff003b;
-	transition: all 5s;
-  } 
-  
-   .footer-div .anchor:hover{
-	color: #fff;
-  }
-  
-  .footer-div .anchor:hover:after{
-	width: 100%;
-  }
-  
+* {
+	border: 1px solid pink !important;
+}
