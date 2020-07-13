@@ -227,8 +227,75 @@ footer {
 		width: 10rem;
 		border: 1px solid black;
 		} 
+
+	header h1, header nav {
+		width: 100%;
+		margin: 0 auto;
+	}
+		/* End of header */
+
+	body {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	section {
+		flex-flow: center nowrap;
+		align-items: center;
+		text-align: center;
+	}
+
+	.top-section {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.body-image {
+		width: 90%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.body-image img {
+		max-width: 50%;
+		margin: -10%;
+	}
+	
+	.body-text, .body-text p, .body-text a, .body-text h3 {
+		width: 90%;
+		justify-content: center;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.bottom-section {
+		flex-flow: row wrap;	
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.project-div {
+		width: 40%;
+		margin: 10px auto;
+	}
+
+	.project-div h5 {
+		font-size: 1.5rem;
+	}
+
+	.bottom-section div img {
+		width: 100%;
+		padding: 0px;
+		margin: 0 auto;
+	}
+	
+	.footer-div h3, .footer-div a {
+		font-size: 1.75rem;
+	}
 }
 
 @media (max-width: 500px) {
-	
+	.project-div img {
+		display: none;
+	}
 }
