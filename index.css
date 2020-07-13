@@ -51,7 +51,7 @@ table {
 
 * {
 	font-family: 'Noto Serif', serif;
-	border: 1px solid pink !important;
+	/* border: 1px solid pink !important; */
 }
 
 header {
