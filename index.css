@@ -51,6 +51,7 @@ table {
 
 * {
 	font-family: 'Noto Serif', serif;
+	/* border: 1px solid pink !important; */
 }
 
 header {
@@ -64,8 +65,8 @@ header {
 }
 
 header h1, header nav {
-	width: 100%;
-	margin-left: 5rem;
+	width: 90%;
+	margin-left: 10%;
 }
 
 h1 {
@@ -74,12 +75,17 @@ h1 {
 
 .header-nav {
 	font-size: 3rem;
+	height: 33%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
 }
 
 .header-nav .anchor {
 	text-decoration: none;
 	color: inherit;
 	padding: 1rem;
+	height: 50%;
 	}
 
 body {
@@ -186,7 +192,110 @@ footer {
 .body-text .body-anchor:hover {
 	color: black;
 }  
+/* Media queries */
 
-/* * {
-	border: 1px solid pink !important;
-} */
+
+@media (max-width: 800px) {
+	header {
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	header h1 {
+		font-size: 4rem;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	header nav {
+		font-size: 2rem;
+		letter-spacing: .2rem;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.header-nav {
+		font-size: 2rem;
+		flex-flow: column nowrap;
+		height: 100%;
+	}
+	
+	.header-nav .anchor {
+		width: 10rem;
+		border: 1px solid black;
+		} 
+
+	header h1, header nav {
+		width: 100%;
+		margin: 0 auto;
+	}
+		/* End of header */
+
+	body {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	section {
+		flex-flow: center nowrap;
+		align-items: center;
+		text-align: center;
+	}
+
+	.top-section {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.body-image {
+		width: 90%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.body-image img {
+		max-width: 50%;
+		margin: -10%;
+	}
+	
+	.body-text, .body-text p, .body-text a, .body-text h3 {
+		width: 90%;
+		justify-content: center;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.bottom-section {
+		flex-flow: row wrap;	
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.project-div {
+		width: 40%;
+		margin: 10px auto;
+	}
+
+	.project-div h5 {
+		font-size: 1.5rem;
+	}
+
+	.bottom-section div img {
+		width: 100%;
+		padding: 0px;
+		margin: 0 auto;
+	}
+	
+	.footer-div h3, .footer-div a {
+		font-size: 1.75rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.project-div img {
+		display: none;
+	}
+}
